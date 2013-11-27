@@ -1,5 +1,8 @@
-#! /bin/sh
-# $Id: expand_cpd_watchdog,v 1.9 2005/03/31 16:25:14 adirc Exp $
+# Linux bash scripts template 
+# By Adir Cohen
+
+
+#! /bin/bash
 
 # debug mode 
 #set -x 
