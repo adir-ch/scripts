@@ -1,5 +1,1 @@
-Notes
------
-
-This is a note @@@ on scripts.
-111
+This is a note on scripts.
