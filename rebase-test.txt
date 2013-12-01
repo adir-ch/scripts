@@ -1,2 +1,2 @@
-master: A
+master: A B
 story:
