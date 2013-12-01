@@ -4,4 +4,4 @@ develop-1
 develop-2
 develop-3
 develop: A B
-master: A
+master: A B
