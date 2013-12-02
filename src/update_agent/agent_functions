@@ -1,0 +1,18 @@
+#! /bin/sh
+
+source agent.conf
+
+function getActiveSetups {
+	# lokking only for the fist appearence of __DONE__
+	doneSign=$(cat $SETUPS_LIST_SRC | egrep -n '^(__DONE__)' | head -1 | cut -d ':' -f1)
+	if [ "$doneSign" == "" ] 
+	then 
+		cat $SETUPS_LIST_SRC
+	else 
+		head -$[ $doneSign - 1 ] $SETUPS_LIST_SRC
+	fi
+}
+ 
+############# TEST MAIN
+# note: do not enable function unless in test mode.
+#getActiveSetups
